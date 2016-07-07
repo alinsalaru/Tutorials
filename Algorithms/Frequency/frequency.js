@@ -13,11 +13,8 @@
 
 function frequency(arr) {
 
-	let frequencyArr=[];
-
-	for(let i=0;i<arr.length;i++) {
-		frequencyArr[i]=0;
-	}
+	let frequencyArr= Array(arr.length).fill(0);
+	
 	for(let i=0;i<arr.length;i++) {
 		frequencyArr[arr[i]]++;
 	}

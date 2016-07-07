@@ -26,7 +26,7 @@ var adder = {
 
 console.log(adder.add(2));
 
-
+// (bar => ({foo: bar}))(2)
 // es6 arrows:
 //  - shorter syntax
 //  - lexical this
