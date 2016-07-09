@@ -14,10 +14,8 @@
 function frequency(arr) {
 
 	let frequencyArr= Array(arr.length).fill(0);
-	
-	for(let i=0;i<arr.length;i++) {
-		frequencyArr[arr[i]]++;
-	}
+
+	frequencyArr.forEach((x,i,array)=> array[arr[i]]++);
 
 	frequencyArr = frequencyArr.filter(x=>{
 		if(x!==0) { return true; }
